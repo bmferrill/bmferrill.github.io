@@ -14,7 +14,7 @@ html {
 /* h2 is for Blacker Extra Bold only*/
 h2 {
   color: #018ABE;
-  font-family: BlackerDisplay-ExtraBold;
+  font-family: 'BlackerDisplay-ExtraBold';
   font-size: 3rem;
   line-height: 3.5rem;
   padding: 0 6rem;
@@ -23,7 +23,7 @@ h2 {
 /* h3 is for footer only*/
 h3 {
   color: #018ABE;
-  font-family: BlackerDisplay-ExtraBold;
+  font-family: 'BlackerDisplay-ExtraBold';
   font-size: 3rem;
   line-height: 3.5rem;
 }
