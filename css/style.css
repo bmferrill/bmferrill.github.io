@@ -1,5 +1,3 @@
-@media (max-width: 768px){
-
 @import url("//hello.myfonts.net/count/39119f")
 
 @font-face {
@@ -145,5 +143,4 @@ footer i {
   color: #018ABE;
   font-size: 2.7rem;
   margin: .75rem .25rem;
-}
 }
