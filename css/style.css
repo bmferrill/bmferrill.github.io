@@ -1,8 +1,16 @@
+
+/*@import url("//hello.myfonts.net/count/39119f");*/
+
+@font-face {
+  font-family: 'BlackerDisplay-ExtraBold';
+  src: url('webfonts/39119F_0_0.eot');
+  src: url('webfonts/39119F_0_0.eot?#iefix') format('embedded-opentype'),
+       url('webfonts/39119F_0_0.woff2') format('woff2'),
+       url('webfonts/39119F_0_0.woff') format('woff'),
+       url('webfonts/39119F_0_0.ttf') format('truetype');
+     }
+
 /* global elements */
-@import url("//hello.myfonts.net/count/39119f");
-
-@font-face {font-family: 'BlackerDisplay-ExtraBold';src: url('webfonts/39119F_0_0.eot');src: url('webfonts/39119F_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/39119F_0_0.woff2') format('woff2'),url('webfonts/39119F_0_0.woff') format('woff'),url('webfonts/39119F_0_0.ttf') format('truetype');}
-
 * {
   box-sizing: border-box;
 }
@@ -12,6 +20,12 @@ html {
   font-family: 'Source Sans Pro';
   font-weight: 300;
 
+}
+
+body{
+  font-family: 'BlackerDisplay-ExtraBold';
+  font-weight: normal;
+	font-style: normal;
 }
 
 /* h2 is for Blacker Extra Bold only*/
