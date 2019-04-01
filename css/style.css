@@ -66,12 +66,12 @@ h6 {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .container {
   background-color: #FBF2EB;
-  margin: auto;
+  margin: 0 auto;
   width: 90%;
 }
 
@@ -92,7 +92,7 @@ header img {
   max-width: 55%;
 }
 
-/* hero section*/
+/* homepage hero section*/
 
 .hero {
   background-color: #FBF2EB;
@@ -110,14 +110,14 @@ header img {
   padding-bottom: 4rem;
 }
 
-/* bin section*/
+/* homepage bin section*/
 
 .bin img {
   max-width: 90%;
   margin-bottom: 1rem;
 }
 
-/* print section*/
+/* homepage print section*/
 
 .print {
   padding: 0 0 6rem;
@@ -137,4 +137,15 @@ footer i {
   color: #018ABE;
   font-size: 2.7rem;
   margin: .75rem .25rem;
+}
+
+/* project page area*/
+.projhero {
+  background-color: #FBF2EB;
+  margin: auto;
+  padding: 3rem;
+}
+
+.projhero img {
+  max-width: 100%;
 }
