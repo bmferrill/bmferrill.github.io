@@ -19,15 +19,23 @@ font-style: normal;
 
 html {
   font-size: 10px;
-  font-family: 'Source Sans Pro';
+  font-family: 'Libre Franklin';
   font-weight: 300;
+}
+
+h1 {
+  color: #018ABE;
+  font-family: 'BlackerDisplay-ExtraBold';
+  font-size: 4rem;
+  line-height: 3.5rem;
+  text-align: center;
 }
 
 /* h2 is for Blacker Extra Bold only*/
 h2 {
   color: #018ABE;
   font-family: 'BlackerDisplay-ExtraBold';
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 3.5rem;
   text-align: center;
 }
@@ -42,9 +50,10 @@ h3 {
 
 /* h4 is subhed style*/
 h4 {
-  font-family: 'Source Sans Pro';
-  font-size: 2rem;
+  font-family: 'Libre Franklin';
+  font-size: 1.8rem;
   font-weight: 300;
+  letter-spacing: -.025rem;
   line-height: 2.3rem;
   text-align: center;
 }
@@ -52,23 +61,24 @@ h4 {
 /* h5 is for footer only*/
 h5 {
   color: #018ABE;
-  font-family: BlackerDisplay-ExtraBold;
+  font-family: 'BlackerDisplay-ExtraBold';
   font-size: 1.6rem;
   line-height: 1.6rem;
 }
 
 /* h6 is for label styles only*/
 h6 {
-  font-family: 'Source Sans Pro';
-  font-size: 1.15rem;
+  font-family: 'Libre Franklin';
+  font-size: 1rem;
   font-weight: 700;
   padding: 0rem 0rem .5rem;
+  text-align: center;
   text-transform: uppercase;
 }
 
 p {
   font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 2.15rem;
 }
 
 p.bold{
@@ -80,7 +90,7 @@ p.bold{
 .container {
   background-color: none;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 
 section {
@@ -92,11 +102,11 @@ section {
 
 header {
   background-color: #FBF2EB;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 header img {
-  max-width: 55%;
+  max-width: 40%;
 }
 
   /* --- HOMEPAGE STYLES --- */
@@ -107,6 +117,7 @@ header img {
 }
 
 .hero img{
+  margin: 0;
   max-width: 75%;
   padding-bottom: 1.75rem;
 }
@@ -154,28 +165,30 @@ footer i {
 .projhero {
   background-color: #FBF2EB;
   margin: auto;
-  padding: 3rem;
+  padding-bottom: 8rem;
   text-align: center;
 }
 
 .projhero img {
-  margin-bottom: 1.75rem;
-  max-width: 100%;
+  margin: 2rem 0 3rem 0;
+  max-width: 95%;
 }
 
 .projhero h4 {
   margin-bottom: 2rem;
-  padding: 0 5rem 0;
+  padding: 0 10rem 0;
 }
 
 .problem, .solution, .research, .canalysis, .personas,
 .stories, .flows, .branding, .design, .preference,
 .usertest, .conclusion {
-  margin: 5rem 0 0 0;
-  padding: 0 5rem 0;
+  margin: 8rem 0 0 0;
+  padding: 0 6rem 0;
+  text-align: center;
 }
 
 .problem, .solution p {
+  letter-spacing: -.025rem;
   text-align: center;
 }
 
@@ -183,12 +196,12 @@ footer i {
 
 .research h4 {
   margin-bottom: 1rem;
-  text-align: left;
 }
 
 .research p {
-  margin-bottom: .5rem;
-  text-align: left;
+  letter-spacing: -.015rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* research results box */
@@ -198,7 +211,7 @@ footer i {
 }
 
 .researchresults p.chatter {
-  margin: -.75rem 0 1.4rem 0;
+  margin: 0 0 1.4rem 0;
 }
 
 .researchresults h2 {
@@ -212,24 +225,28 @@ footer i {
 
 .researchresults p {
   font-size: 1.45rem;
+  margin-top: 1.45rem;
   text-align: center;
 }
 
 /* competitive analysis */
 
-.canalysis h4 {
-  font-weight: 400;
+.canalysis h2 {
   margin-bottom: 1rem;
-  text-align: left;
-}
-
-.canalysis p {
-  text-align: left;
 }
 
 .canalysis img {
-  margin: 3.5rem 0 1.5rem 0;
+  margin: 0 0 1.5rem 0;
   max-width: 20%;
+}
+.canalysis h4 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: .3rem 0 .5rem 0;
+}
+
+.canalysis p {
+  margin-bottom: 3rem;
 }
 
 /* user personas */
@@ -237,7 +254,6 @@ footer i {
 .personas h4 {
   font-weight: 400;
   margin-bottom: .5rem;
-  text-align: left;
 }
 
 .personas img {
@@ -246,7 +262,7 @@ footer i {
 }
 
 .personas p{
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 
 /* user stories */
