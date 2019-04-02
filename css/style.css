@@ -1,3 +1,5 @@
+/* padding top right bottom left*/
+
 @font-face {font-family: 'BlackerDisplay-ExtraBold';
 src: url('../webfonts/39171F_0_0.eot');
 src: url('../webfonts/39171F_0_0.eot?#iefix') format('embedded-opentype'),
@@ -9,7 +11,8 @@ font-weight: normal;
 font-style: normal;
    }
 
-/* global elements */
+/* GLOBAL STYLES */
+
 * {
   box-sizing: border-box;
 }
@@ -18,7 +21,6 @@ html {
   font-size: 10px;
   font-family: 'Source Sans Pro';
   font-weight: 300;
-
 }
 
 /* h2 is for Blacker Extra Bold only*/
@@ -27,7 +29,7 @@ h2 {
   font-family: 'BlackerDisplay-ExtraBold';
   font-size: 3rem;
   line-height: 3.5rem;
-  padding: 0 6rem;
+  text-align: center;
 }
 
 /* h3 is for footer only*/
@@ -41,10 +43,10 @@ h3 {
 /* h4 is subhed style*/
 h4 {
   font-family: 'Source Sans Pro';
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 300;
-  line-height: 2rem;
-  padding: 0 4rem;
+  line-height: 2.3rem;
+  text-align: center;
 }
 
 /* h5 is for footer only*/
@@ -58,19 +60,25 @@ h5 {
 /* h6 is for label styles only*/
 h6 {
   font-family: 'Source Sans Pro';
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  padding: 6rem 0rem 1rem;
+  padding: 0rem 0rem .5rem;
   text-transform: uppercase;
-
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+p.bold{
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .container {
-  background-color: #FBF2EB;
+  background-color: none;
   margin: 0 auto;
   width: 90%;
 }
@@ -78,7 +86,6 @@ p {
 section {
   background-color: white;
   margin: auto;
-  text-align: center;
 }
 
 /* header section*/
@@ -92,7 +99,8 @@ header img {
   max-width: 55%;
 }
 
-/* homepage hero section*/
+  /* --- HOMEPAGE STYLES --- */
+       /* hero section */
 
 .hero {
   background-color: #FBF2EB;
@@ -110,14 +118,14 @@ header img {
   padding-bottom: 4rem;
 }
 
-/* homepage bin section*/
+/* bin section*/
 
 .bin img {
   max-width: 90%;
   margin-bottom: 1rem;
 }
 
-/* homepage print section*/
+/* print section */
 
 .print {
   padding: 0 0 6rem;
@@ -129,6 +137,7 @@ header img {
 }
 
 footer {
+  background-color:#FBF2EB;
   padding: 2rem;
   text-align: center;
 }
@@ -139,13 +148,187 @@ footer i {
   margin: .75rem .25rem;
 }
 
-/* project page area*/
+/* PROJECT PAGE STYLES*/
+/* hero section */
+
 .projhero {
   background-color: #FBF2EB;
   margin: auto;
   padding: 3rem;
+  text-align: center;
 }
 
 .projhero img {
+  margin-bottom: 1.75rem;
   max-width: 100%;
+}
+
+.projhero h4 {
+  margin-bottom: 2rem;
+  padding: 0 5rem 0;
+}
+
+.problem, .solution, .research, .canalysis, .personas,
+.stories, .flows, .branding, .design, .preference,
+.usertest, .conclusion {
+  margin: 5rem 0 0 0;
+  padding: 0 5rem 0;
+}
+
+.problem, .solution p {
+  text-align: center;
+}
+
+/* user research */
+
+.research h4 {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.research p {
+  margin-bottom: .5rem;
+  text-align: left;
+}
+
+/* research results box */
+
+.researchresults {
+  margin: 4rem 0;
+}
+
+.researchresults p.chatter {
+  margin: -.75rem 0 1.4rem 0;
+}
+
+.researchresults h2 {
+  margin: 0 0 -.25rem 0;
+}
+
+.researchresults h6.numlabel {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.researchresults p {
+  font-size: 1.45rem;
+  text-align: center;
+}
+
+/* competitive analysis */
+
+.canalysis h4 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.canalysis p {
+  text-align: left;
+}
+
+.canalysis img {
+  margin: 3.5rem 0 1.5rem 0;
+  max-width: 20%;
+}
+
+/* user personas */
+
+.personas h4 {
+  font-weight: 400;
+  margin-bottom: .5rem;
+  text-align: left;
+}
+
+.personas img {
+  margin: 2rem 0;
+  max-width: 100%;
+}
+
+.personas p{
+  margin-bottom: .5rem;
+}
+
+/* user stories */
+
+.stories {
+  text-align: center;
+}
+
+.stories h4 {
+  font-weight: 400;
+  margin: 1.6rem 0 -.5rem 0;
+}
+
+.stories h6 {
+  margin-top: 1.4rem;
+}
+
+.stories p {
+  margin-bottom: .75rem;
+}
+
+/* user flows */
+
+.flows {
+  text-align: center;
+}
+
+.flows img{
+  max-width: 100%;
+  margin: 0 0 1.6rem 0;
+}
+
+/* branding */
+
+.branding {
+  text-align: center;
+}
+
+.branding img{
+  max-width: 100%;
+  margin: 0 0 1.6rem 0;
+}
+
+/* design */
+
+.design img {
+  max-width: 100%;
+}
+
+.design h4 {
+  font-weight: 400;
+  margin-top: .5rem;
+}
+
+.design p {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* preference testing */
+
+.preference h4 {
+  margin-bottom: 2rem;
+}
+
+/* user testing */
+
+.usertest h2 {
+  margin-bottom: 2rem
+}
+
+.usertest img {
+  max-width: 100%;
+}
+
+.usertest p {
+  margin-top: 2rem;
+  letter-spacing: -.01rem;
+  text-align: center;
+}
+
+.conclusion {
+  margin-bottom: 5rem;
+  text-align: center;
 }

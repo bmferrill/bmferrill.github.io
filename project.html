@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
   <title>Brandon Ferrill | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -33,9 +34,11 @@
       </section>
 
     <!-- problem and solution section -->
-    <section class="probsol">
+    <section class="problem">
       <h2>Problem</h2>
       <p>Create a user experience that makes saving, organizing, sharing, creating and collaborating  simple and easy.</p>
+    </section>
+    <section class="solution">
       <h2>Solution</h2>
       <p>Make a clean, organized and basic interface that is visually pleasing and inviting to new and inexperience users. </p>
     </section>
@@ -43,23 +46,27 @@
     <!-- user research section -->
     <section class="research">
       <h2>User research</h2>
-      <h4>Thirty-five people responded to a survey about cloud storage preferences.  Questions  I hoped to have answered:</h4>
+      <h4>Thirty-five people responded  to a survey about cloud storage preferences.  Questions  I hoped to have answered:</h4>
       <p>What do users want and expect?</p>
       <p>Why don’t people use cloud storage?</p>
       <p>What would make non-users become users?</p>
       <p>Do the user’s preferences align with the client’s proposal?</p>
-      <p>The results</p>
-      <p>Cloud storage users vs. Non-users</p>
-      <p>70%</p>
-      <p>Cloud storage users</p>
-      <p>30%</p>
-      <p>Cloud storage non-users</p>
+
+      <div class="researchresults">
+      <p class="bold">The results</p>
+      <p class="chatter">Cloud storage users vs. Non-users</p>
+      <h2>70%</h2>
+      <h6 class="numlabel">Cloud storage users</h6>
+      <h2>30%</h2>
+      <h6 class="numlabel">Cloud storage non-users</h6>
       <p>The majority of respondents are college-educated men who travel to the city from the suburbs to work.</p>
-      <p>Of those 70% using cloud storage ...</p>
+      </div>
+
+      <p class="bold">Of those 70% using cloud storage ...</p>
       <p>Dropbox and Google Drive are most popular.</p>
       <p>Most are willing to pay for more space.</p>
       <p>Photos & video are most common uses.</p>
-      <p>Of the 30% not using cloud storage ...</p>
+      <p class="bold">Of the 30% not using cloud storage ...</p>
       <p>Distrust the security or don't understand how the technology works.</p>
       <p>Storing photos and videos would be main reason.</p>
     </section>
@@ -86,36 +93,36 @@
       <h2>User personas</h2>
       <img src="images/persona-buckingham.jpg" alt="persona 1">
       <h6>Female, creative director in brooklyn, ny</h6>
-      <h2>Laura Buckingham, 38</h2>
+      <h4>Laura Buckingham, 38</h4>
       <p>Laura is a working professional who is organized, efficient and a leader. Laura is a wife of five years and the mother of a three-year old boy and  loves spending time with her family. Laura leads a staff of 12 people and wishes she was able to do more  on the go so she could spend more time with her family but make her more efficent.</p>
 
-      <p>Laura’s motivations</p>
+      <p class="bold">Laura’s motivations</p>
       <p>Keep track of her projects and her staff’s progress on-the-go, or in meetings at work.</p>
       <p>To reference pieces of other projects.</p>
 
-      <p>Laura’s goals</p>
+      <p class="bold">Laura’s goals</p>
       <p>Wants to track the progress of all the projects she’s leading.</p>
       <p>Wants an easier way to collaborate with her staff on those projects.</p>
       <p>Wants to work iteratively with her staff on the go.</p>
       <p>Organize  projects and versions easily.</p>
 
-      <p>Laura’s frustrations</p>
+      <p class="bold">Laura’s frustrations</p>
       <p>Having to constantly be connected to email.</p>
       <p>Being cutoff from real-time communication with staff.</p>
       <p>Not having a central organized file system.</p>
       <img src="images/persona-johnson.jpg" alt="persona 2">
-      <h6>Male, social media director in washington, D.C.</h6>
-      <h2>Michael Johnson, 31</h2>
+      <h6>Male, social media dir. in washington, D.C.</h6>
+      <h4>Michael Clark, 31</h4>
       <p>He’s extremely family-oriented. His whole world revolves around his wife and two daughters. Michael is very busy with his job as social media director for a D.C. non-profit. He’s constantly staying up-to-date on news and reactions. Whether it’s Michael’s job or his desire to document the latest family adventure to share with family and friends, he’s constantly attached to his phone.</p>
-      <p>Michael’s motiviations</p>
+      <p class="bold">Michael’s motiviations</p>
       <p>Uses Evernote for work and Dropbox for family, but would like having one place for both.</p>
-      <p>Michael’s goals</p>
+      <p class="bold">Michael’s goals</p>
       <p>Make it easier to switch between work and family.</p>
       <p>To store article clips, social media posts, notes and task lists for work.</p>
       <p>To store photos and videos of his family.</p>
       <p>To be able to easily share content.</p>
       <p>To keep work and family items separate and organized in one place.</p>
-      <p>Michael’s frustrations</p>
+      <p class="bold">Michael’s frustrations</p>
       <p>Hates having to switch between apps so often.</p>
       <p>Wishes he could more easily share content.</p>
     </section>
@@ -125,24 +132,24 @@
       <h2>User stories</h2>
       <h4>High Priorities</h4>
       <h6>New users</h6>
-      <p>Need information about the product.</p>
+      <p>Need information<br>about the product.</p>
       <p>A place to sign up.</p>
       <h6>Return users</h6>
-      <p>Need to be able to login.</p>
+      <p>Need to be able  to login.</p>
       <h6>All users</h6>
-      <p>Upload, organize and share from any device.</p>
+      <p>Upload, organize and share <br>from any device.</p>
       <h4>Medium priorities</h4>
       <h6>All users</h6>
-      <p>Upgrade space</p>
+      <p>Upgrade space.</p>
       <p>Pay yearly for the upgrade.</p>
       <p>Pay monthly for the upgrade.</p>
-      <p>Save clips from the web</p>
-      <p>Content such as notes, lists, tasks</p>
+      <p>Save clips from the web.</p>
+      <p>Create content  such as<br>notes, lists, tasks, etc.</p>
       <h4>Low priorities</h4>
       <h6>All users</h6>
-      <p>Share content with others</p>
-      <p>Share content to social media</p>
-      <p>Collaborate with co-workers</p>
+      <p>Share content with others.</p>
+      <p>Share content to social media.</p>
+      <p>Collaborate with co-workers.</p>
     </section>
 
     <!-- user flows section -->
@@ -157,6 +164,7 @@
     <section class="branding">
       <img src="images/branding.png" alt="branding">
       <h2>Branding</h2>
+      <h4>Guidelines for how to use the logo, colors and typography.</h4>
       <a href="https://drive.google.com/open?id=1hENnfqzo9RTQMq7R4c6aG011eE9OAOcr">View style guide</a>
     </section>
 
@@ -166,17 +174,17 @@
       <img src="images/sketches-landing.jpg" alt="user flow">
       <img src="images/sketches-dash.jpg" alt="user flow">
       <img src="images/sketches-note.jpg" alt="user flow">
-      <p>Sketches</p>
+      <h4>Sketches</h4>
       <p>First step was to sketch ideas for main sections of the app and website. I did four-up sketches for the landing page, onboarding, dashboard and text document creation. </p>
       <img src="images/wireframes-landing.jpg" alt="user flow">
       <img src="images/wireframes-dash.jpg" alt="user flow">
       <img src="images/wireframes-note.jpg" alt="user flow">
-      <p>Wireframes</p>
+      <h4>Wireframes</h4>
       <p>Second step was to create digital wireframes from the sketches. Because I did four-up sketches, I took the best ideas from each sketch and put them together in the wireframes. </p>
       <img src="images/mockups-landing.jpg" alt="user flow">
       <img src="images/mockups-dash.jpg" alt="user flow">
       <img src="images/mockups-note.jpg" alt="user flow">
-      <p>Mockups</p>
+      <h4>Mockups</h4>
       <p>Once the wireframes were done, the third step was to build mockups of how the app and website would actually look based on the the basic structure and content of the wireframes. </p>
     </section>
 
@@ -184,11 +192,11 @@
     <section class="preference">
       <h2>Preference testing</h2>
       <h4>The prototype was tested by potential users. They were asked three questions and given two options. They chose which option they preferred.</h4>
-      <p>1. Dark background or white background.</p>
+      <p class="bold">1. Background: Dark or white?.</p>
       <p>The white background won by a slight margin. I think one way to address this is to give users the option to choose between a light or dark background. </p>
-      <p> 2. Current rail color palette of green screen and purple buttons or the inverse.</p>
+      <p class="bold"> 2. Rail color: Green with purple buttons or the inverse?</p>
       <p>Two-thirds of those who responded replied that they prefer the rail as it is currently purple on green.</p>
-      <p>3. Rounded corners or square corners. </p>
+      <p class="bold">3. Corners: Rounded or square? </p>
       <p>Round corners won by a slim margin of 55%, so because of the split I kept the round corners to tie in with the branding.</p>
     </section>
 
@@ -207,8 +215,8 @@
     </section>
 
     <footer>
-      <h2>Let's stay in touch!</h2>
-      <h3>Contact me on any of these platforms.</h3>
+      <h3>Let's stay in touch!</h3>
+      <h5>Contact me on any of these platforms.</h5>
       <i class="fab fa-linkedin"></i>
       <i class="fab fa-github-square"></i>
       <i class="fab fa-instagram"></i>
