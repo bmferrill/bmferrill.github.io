@@ -20,7 +20,7 @@ font-style: normal;
 html {
   font-size: 10px;
   font-family: 'Libre Franklin';
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1 {
@@ -44,7 +44,7 @@ h2 {
 h3 {
   color: #018ABE;
   font-family: 'BlackerDisplay-ExtraBold';
-  font-size: 3rem;
+  font-size: 2.6rem;
   line-height: 3.5rem;
 }
 
@@ -87,6 +87,10 @@ p.bold{
   margin-top: 1.5rem;
 }
 
+a:link{
+  text-decoration: none;
+}
+
 .container {
   background-color: none;
   margin: 0 auto;
@@ -102,11 +106,11 @@ section {
 
 header {
   background-color: #FBF2EB;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
 }
 
 header img {
-  max-width: 40%;
+  max-width: 45%;
 }
 
   /* --- HOMEPAGE STYLES --- */
@@ -114,37 +118,69 @@ header img {
 
 .hero {
   background-color: #FBF2EB;
+  text-align: center;
+  padding-bottom: 4rem;
 }
 
 .hero img{
   margin: 0;
-  max-width: 75%;
-  padding-bottom: 1.75rem;
+  max-width: 71%;
+  padding-bottom: 1.65rem;
+}
+
+.hero h1 {
+  margin-bottom: .5rem;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  margin-bottom: .8rem;
+  padding: 0 10rem;
 }
 
 .hero i {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: .3rem;
-  margin-top: 1rem;
+  margin-top: .75rem;
   padding-bottom: 4rem;
 }
 
 /* bin section*/
 
+.bin {
+  margin-top: 6rem;
+  text-align: center;
+}
+
 .bin img {
   max-width: 90%;
-  margin-bottom: 1rem;
+  margin: .25rem 0 1rem;
+}
+
+.bin h2 {
+  text-decoration: none;
+}
+
+.bin h4 {
+  padding: 0 6rem;
 }
 
 /* print section */
 
 .print {
+  margin-top: 6rem;
   padding: 0 0 6rem;
+  text-align: center;
 }
 
 .print img {
   max-width: 90%;
-  margin: -.5rem 0 1rem;
+  margin: .25rem 0 1rem;
+}
+
+.print h4 {
+  padding: 0 6rem;
 }
 
 footer {
