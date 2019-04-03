@@ -87,8 +87,28 @@ p.bold{
   margin-top: 1.5rem;
 }
 
+button {
+  background-color: #F9688D;
+  border: none;
+  border-radius: 3rem;
+  font-family: 'Libre Franklin';
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 1.2rem;
+  text-transform: uppercase;
+}
+
 a:link{
   text-decoration: none;
+  color: white;
+
+}
+
+a:visited{
+  text-decoration: none;
+  color: white;
+
 }
 
 .container {
@@ -201,18 +221,23 @@ footer i {
 .projhero {
   background-color: #FBF2EB;
   margin: auto;
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
   text-align: center;
 }
 
 .projhero img {
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0 4rem 0;
   max-width: 95%;
 }
 
 .projhero h4 {
   margin-bottom: 2rem;
   padding: 0 8rem 0;
+}
+
+.projhero i {
+  font-size: 1.6rem;
+  margin-top: 4rem;
 }
 
 .problem, .solution, .research, .canalysis, .personas,
@@ -243,6 +268,8 @@ footer i {
 /* research results box */
 
 .researchresults {
+  border-color: black;
+  border: 1px 0 1px 0;
   margin: 4rem 0;
 }
 
@@ -256,14 +283,23 @@ footer i {
 }
 
 .researchresults h6.numlabel {
-  margin-bottom: 1rem;
   text-align: center;
 }
 
 .researchresults p {
-  font-size: 1.45rem;
+  font-size: 1.6rem;
   margin-top: 1.45rem;
   text-align: center;
+}
+
+.big70 {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.big30 {
+  display: inline-block;
+  margin-left: 1rem;
 }
 
 /* competitive analysis */
@@ -288,9 +324,13 @@ footer i {
 
 /* user personas */
 
+.personas h6 {
+  margin-bottom: .6rem;
+}
+
 .personas h4 {
-  font-weight: 400;
-  margin-bottom: .5rem;
+  font-weight: 600;
+  margin-bottom: .6rem;
 }
 
 .personas img {
@@ -302,6 +342,11 @@ footer i {
   margin-bottom: 1rem;
 }
 
+.personas p.bold {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
 /* user stories */
 
 .stories {
@@ -309,12 +354,13 @@ footer i {
 }
 
 .stories h4 {
-  font-weight: 400;
+  font-weight: 600;
   margin: 1.6rem 0 -.5rem 0;
 }
 
 .stories h6 {
-  margin-top: 1.4rem;
+  margin: 1.6rem 0 1rem 0;
+  text-decoration: underline;
 }
 
 .stories p {
@@ -327,9 +373,13 @@ footer i {
   text-align: center;
 }
 
-.flows img{
+.flows img {
   max-width: 100%;
   margin: 0 0 1.6rem 0;
+}
+
+.flows button {
+  margin-top: 2rem;
 }
 
 /* branding */
@@ -343,6 +393,10 @@ footer i {
   margin: 0 0 1.6rem 0;
 }
 
+.branding button {
+  margin-top: 2rem;
+}
+
 /* design */
 
 .design img {
@@ -350,7 +404,7 @@ footer i {
 }
 
 .design h4 {
-  font-weight: 400;
+  font-weight: 600;
   margin-top: .5rem;
 }
 
@@ -365,10 +419,14 @@ footer i {
   margin-bottom: 2rem;
 }
 
+.preference p.bold{
+  font-weight: 700;
+}
+
 /* user testing */
 
 .usertest h2 {
-  margin-bottom: 2rem
+  margin-bottom: .75rem
 }
 
 .usertest img {
