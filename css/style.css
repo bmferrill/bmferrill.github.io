@@ -99,17 +99,16 @@ button {
   text-transform: uppercase;
 }
 
-a:link{
+a {
   text-decoration: none;
   color: white;
-
 }
 
-a:visited{
+/*a:visited{
   text-decoration: none;
   color: white;
+  }*/
 
-}
 
 .container {
   background-color: none;
@@ -131,6 +130,82 @@ header {
 
 header img {
   max-width: 45%;
+}
+
+/* ** FOR MOBILE ** HAMBUGER NAV MENU */
+
+.menu-on {
+  color:black;
+  font-size: 1.6rem;
+  position: absolute;
+  margin: 2.7rem 3rem;
+  right: 0;
+  top: 0;
+  z-index: 1001;
+}
+
+.menu-off {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  display: none;
+}
+
+.menu {
+  background-color: white;
+  display: none;
+  padding: 2rem;
+  position: absolute;
+  margin: 5rem 3rem;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu a {
+  color: black;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+/* toggle-menu is the id for the label for the input checkbox.
+   nav.menu is a sibbling of #toggle-menu. (on the same level)
+   this line says that when the checkbox is checked to display the nav.menu*/
+#toggle-menu:checked ~ nav.menu {
+  display: block;
+}
+
+#toggle-menu:checked ~ .menu-off {
+  display:block;
+}
+
+/* Hidden work dropdown menu */
+
+.work-dropdown {
+  display: none;
+}
+
+.work-dropdown-on li {
+  color: black;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+/* Hidden checkbox that activates work dropdown */
+#work-checkbox {
+  display: none;
+}
+
+/*if work checkbox is checked, activates work dropdown */
+#work-checkbox:checked ~ ul.work-dropdown {
+  display: block;
 }
 
   /* --- HOMEPAGE STYLES --- */
