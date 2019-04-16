@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
   <title>Brandon Ferrill | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="fonts/MyFontsWebfontsKit.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <img src="images/ferrill-logo.png" alt="logo">
-    <nav>
-      <ul>
-        <li><a href="work.html">work</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="contact.html">contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="container">
 
-  <div class="container">
+      <header>
+        <div class="logo">
+        <a href="index.html"><img src="images/ferrill-logo.png" alt="logo"></a>
+        </div>
+
+        <input id="toggle-menu" type="checkbox" />
+        <label for="toggle-menu" class="menu-on"><i class="fas fa-bars"></i></label>
+        <label for="toggle-menu" class="menu-off"></label>
+
+        <nav class="menu">
+          <ul>
+            <input id="work-checkbox" type="checkbox" />
+            <label for="work-checkbox" class="work-dropdown-on"><li>Work</li></label>
+            <ul class="work-dropdown">
+              <li><a href="project.html">Digital</a></li>
+              <li><a href="print.html">Print</a></li>
+            </ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+      </header>
+
+    <section class="bio">
+
+    <div class="about-img">
     <img src="images/ferrill-about.jpg" alt="Brandon">
-    <h2>I love the positive impact design can have on people and society.</h2>
+    </div>
+
+    <div class="bio-text">
+    <h2>I love the positive impact design  can have on people and society.</h2>
     <p>Design is a vector that makes it easier for us to digest information. I believe that better informed people who understand more about the world around them can make informed decisions which will, hopefully, have a positive impact on society.</p>
-<p>In my 15 years as an editorial designer, it’s never been more apparent to me, just how huge a role design plays in people’s lives. It organizes information, it can be inspirational and can trigger all types of emotions. Design is so powerful that it can do all of these things simultaneously and subconsciously. That idea, that design makes these kinds of impacts, is exciting, but also something I do not take with a grain of salt.</p>
-<p>Helping people energizes me. I hope the work I’m doing in design makes a positive contribution to someone’s life. If someone sees something I did that helps them become better informed, then all the work I’ve done is worthwhile.</p>
-<p>As I move forward in my career, I know the best thing I can do is to continue to make sure I’m thinking critically about how the visuals work with the content. It’s also equally important to continue to work hard to implement the best design solutions I can in order to prevent hiccups for anyone trying to internalize what they’re seeing. If the design unintentionally makes people pause or the visual doesn’t serve the content in some way then the design hasn’t done its job and you risk misleading people.</p>
-<p>I don’t know what my future in design will actually be, but I hope however it turns out, I’ve made it easier for someone to better understand something around them and understanding that thing made a positive impact on their life.
-</p>
-  </div>
+    <p>In my 15 years as an editorial designer, it’s never been more apparent to me, just how huge a role design plays in people’s lives. It organizes information, it can be inspirational and can trigger all types of emotions. Design is so powerful that it can do all of these things simultaneously and subconsciously. That idea, that design makes these kinds of impacts, is exciting, but also something I do not take with a grain of salt.</p>
+    <p>Helping people energizes me. I hope the work I’m doing in design makes a positive contribution to someone’s life. If someone sees something I did that helps them become better informed, then all the work I’ve done is worthwhile.</p>
+    <p>As I move forward in my career, I know the best thing I can do is to continue to make sure I’m thinking critically about how the visuals work with the content. It’s also equally important to continue to work hard to implement the best design solutions I can in order to prevent hiccups for anyone trying to internalize what they’re seeing. If the design unintentionally makes people pause or the visual doesn’t serve the content in some way then the design hasn’t done its job and you risk misleading people.</p>
+    <p>I don’t know what my future in design will actually be, but I hope however it turns out, I’ve made it easier for someone to better understand something around them and understanding that thing made a positive impact on their life.</p>
+    </div>
+
+    </section>
 
   <footer>
-      <h2>Let's stay in touch!</h2>
-      <h3>Contact me on any of these platforms.</h3>
-      <i class="fab fa-linkedin"></i>
-      <i class="fab fa-github-square"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-twitter-square"></i>
-    </footer>
+    <h3>Let's stay in touch!</h3>
+    <h5>Contact me on any of these platforms.</h5>
+    <a href="https://www.linkedin.com/in/brandon-ferrill/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/bmferrill"><i class="fab fa-github-square"></i></a>
+    <a href="https://www.instagram.com/bmferrill/"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/bmferrill"><i class="fab fa-twitter-square"></i></a>
+  </footer>
+
 </body>
 </html>
