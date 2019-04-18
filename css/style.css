@@ -566,6 +566,107 @@ footer i {
 }
 
 
+/** P R I N T   P A G E **/
+
+
+.print-port {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". img-1 ."
+  ". img-2 ."
+  ". img-3 ."
+  ". img-4 ."
+  ". img-6 ."
+  ". img-5 ."
+  ". img-7 ."
+  ". img-8 ."
+  ". img-9 ."
+  ". img-10 ."
+  ". img-12 ."
+  ". img-11 ."
+  ". img-13 ."
+  ". img-14 ."
+  ". img-15 .";
+  margin: 3rem 0;
+}
+
+.print-port img {
+  margin: 0, auto;
+  max-width: 80vw;
+}
+
+.img-1, .img-2, .img-3, .img-4, .img-5,
+.img-6, .img-7, .img-8, .img-9, .img-10,
+.img-11, .img-12, .img-13, .img-14, .img-15 {
+  align-self: center;
+  justify-self: center;
+}
+
+
+.img-1{
+  grid-area: img-1;
+}
+
+.img-2{
+  grid-area: img-2;
+}
+
+.img-3{
+  grid-area: img-3;
+}
+
+.img-4{
+  grid-area: img-4;
+}
+
+.img-5{
+  grid-area: img-5;
+}
+
+.img-6{
+  grid-area: img-6;
+}
+
+.img-7{
+  grid-area: img-7;
+}
+
+.img-8{
+  grid-area: img-8;
+}
+
+.img-9{
+  grid-area: img-9;
+}
+
+.img-10{
+  grid-area: img-10;
+}
+
+.img-11{
+  grid-area: img-11;
+}
+
+.img-12{
+  grid-area: img-12;
+}
+
+.img-13{
+  grid-area: img-13;
+}
+
+.img-14{
+  grid-area: img-14;
+}
+
+.img-15{
+  grid-area: img-15;
+}
+
+
 /* T A B L E T  V E R S I O N*/
 
 
@@ -1238,13 +1339,110 @@ grid-template-areas:
   margin: 0 auto;
 }
 
+/** P R I N T   P A G E **/
 
 
-/* DESTOP STYLES */
-/* HOMEPAGE*/
+.print-port {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". img-1 img-2 ."
+  ". img-3 img-3 ."
+  ". img-4 img-6 ."
+  ". img-5 img-5 ."
+  ". img-7 img-7 ."
+  ". img-8 img-9 ."
+  ". img-10 img-12 ."
+  ". img-11 img-11 ."
+  ". img-13 img-14 ."
+  ". img-15 img-15 .";
+  margin: 3rem 0;
+}
+
+.print-port img {
+  margin: 0, auto;
+}
+
+.img-1, .img-2, .img-3, .img-4, .img-5,
+.img-6, .img-7, .img-8, .img-9, .img-10,
+.img-11, .img-12, .img-13, .img-14, .img-15 {
+  align-self: center;
+}
+
+
+.img-1{
+  grid-area: img-1;
+}
+
+.img-2{
+  grid-area: img-2;
+}
+
+.img-3{
+  grid-area: img-3;
+}
+
+.img-4{
+  grid-area: img-4;
+}
+
+.img-5{
+  grid-area: img-5;
+}
+
+.img-6{
+  grid-area: img-6;
+}
+
+.img-7{
+  grid-area: img-7;
+}
+
+.img-8{
+  grid-area: img-8;
+}
+
+.img-9{
+  grid-area: img-9;
+}
+
+.img-10{
+  grid-area: img-10;
+}
+
+.img-11{
+  grid-area: img-11;
+}
+
+.img-12{
+  grid-area: img-12;
+}
+
+.img-13{
+  grid-area: img-13;
+}
+
+.img-14{
+  grid-area: img-14;
+}
+
+.img-15{
+  grid-area: img-15;
+}
+
+}
+
+
+
+
 
 
 @media screen and (min-width: 1024px) {
+
+  /* DESTOP STYLES */
+  /* HOMEPAGE*/
 
   .container {
     margin: 0 auto;
