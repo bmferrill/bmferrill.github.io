@@ -127,8 +127,8 @@ header img {
 
 /* ** FOR MOBILE ** HAMBUGER NAV MENU */
 
-.desktop-menu {
-  visibility: hidden;
+.desktop-nav, .desktop-menu {
+  display: none;
 }
 
 .menu-on {
@@ -691,15 +691,16 @@ footer i {
   }
 
   .menu, .menu-on, .menu-off {
-    visibility: visible;
+    visibility: hidden;
   }
 
   header {
     display: grid;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "logo .";
+    ". logo nav ."
+    ".    . menu .";
   }
 
   .logo {
@@ -712,6 +713,31 @@ footer i {
     margin: 0 auto;
     max-width: 50%;
   }
+
+  .desktop-nav {
+    grid-area: nav;
+    align-self: center;
+    justify-self: end;
+    visibility: visible;
+  }
+
+  .desktop-nav li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  .desktop-nav a {
+    color: black;
+    font-style: 'Libre Franklin';
+    font-size: 1.4vw;
+    margin-left: 1vw;
+  }
+
+  .desktop-nav a:hover{
+    color: #018ABE;
+    font-weight: 600;
+  }
+
 
 
   .hero {
@@ -728,7 +754,7 @@ footer i {
     justify-self: center;
     grid-area: me;
     max-width: 83%;
-    margin: -4rem 0 0 0;
+    margin: -2rem 0 0 0;
     padding: 0 0 2rem 0;
   }
 
@@ -737,7 +763,7 @@ footer i {
     grid-area: hero-text;
     justify-self: end;
     margin-top: 5.5rem;
-    padding: 0 0 0 auto;
+    padding: 3rem 0 0 auto;
     width:90%;
   }
 
@@ -1339,6 +1365,51 @@ grid-template-areas:
   margin: 0 auto;
 }
 
+
+/** P R I N T   P A G E **/
+
+
+.bio {
+  display:grid;
+  grid-template-columns: 3fr 6fr 3fr ;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "bio-img  bio-img  bio-img"
+  ". bio-text .";
+  padding: 0;
+}
+
+.bio-text h2 {
+  font-size: 3vw;
+  line-height:3.5vw;
+  text-align: left;
+  max-width: 28ch;
+}
+
+.bio p{
+  margin: 1rem 0 0 0;
+  letter-spacing: -.01rem;
+  max-width: 50ch;
+}
+
+.about-img {
+ grid-area: bio-img;
+}
+
+.about-img img{
+  justify-self: center;
+  width: 100vw;
+}
+
+.bio-text {
+  margin: 2rem 0 2rem 0;
+  text-align: left;
+  grid-area: bio-text;
+  justify-self: center;
+}
+
+
+
 /** P R I N T   P A G E **/
 
 
@@ -1463,7 +1534,7 @@ grid-template-areas:
   }
 
   .menu, .menu-on, .menu-off {
-    visibility: visible;
+    visibility: hidden;
   }
 
   header {
@@ -1471,7 +1542,8 @@ grid-template-areas:
     grid-template-columns: 1fr 5fr 5fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    ". logo . .";
+    ". logo nav ."
+    ".    . menu .";
   }
 
   .logo {
@@ -1484,6 +1556,60 @@ grid-template-areas:
     margin: 0 auto;
     max-width: 50%;
   }
+
+  .desktop-nav {
+    grid-area: nav;
+    align-self: center;
+    justify-self: end;
+    display:inline-block;
+  }
+
+  .desktop-nav li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  .desktop-nav a {
+    color: black;
+    font-style: 'Libre Franklin';
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+
+  .desktop-nav a:hover{
+    color: #018ABE;
+    font-weight: 600;
+  }
+
+
+  .desktop-menu {
+    background-color: white;
+    grid-area: menu;
+    justify-self: end;
+    padding: .8rem;
+    margin: -2rem 5rem 0 0;
+    position:relative;
+    z-index: 2000;
+    display: none;
+  }
+
+  .desktop-menu li {
+    display: inline-block;
+    color: black;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0 1rem 0 1rem;
+  }
+
+  .desktop-nav:hover ~ .desktop-menu {
+    display:block;
+  }
+
+
+
+
+
+
 
 
   .hero {
@@ -1499,8 +1625,8 @@ grid-template-areas:
     align-self: start;
     justify-self: center;
     grid-area: me;
-    max-width: 83%;
-    margin: -8rem 0 0 0;
+    max-width: 81%;
+    margin: -3rem 4rem 0 0;
     padding: 0 0 2rem 0;
   }
 
@@ -1509,22 +1635,22 @@ grid-template-areas:
     grid-area: hero-text;
     justify-self: end;
     margin-top: 5.5rem;
-    padding: 0 0 0 auto;
+    padding: 5rem 0 0 5rem;
     width:90%;
   }
 
   .hero-text h1 {
-    font-size: 13rem;
-    line-height: 10rem;
+    font-size: 10vw;
+    line-height: 10vw;
     text-align: left;
   }
 
   .hero-text h2 {
-    font-size: 3.5rem;
-    line-height: 4.3rem;
+    font-size: 3.5vw;
+    line-height: 4vw;
     text-align: left;
     justify-self: end;
-    max-width: 20ch;
+    max-width: 15ch;
   }
 
   .hero-text i {
@@ -2105,8 +2231,8 @@ grid-template-areas:
 }
 
 .bio-text h2 {
-  font-size: 3rem;
-  line-height:3.5rem;
+  font-size: 3vw;
+  line-height:3.5vw;
   text-align: left;
   max-width: 28ch;
 }
@@ -2159,6 +2285,8 @@ grid-template-areas:
 .img-6, .img-7, .img-8, .img-9, .img-10,
 .img-11, .img-12, .img-13, .img-14, .img-15 {
   align-self: center;
+  box-shadow: .2rem .2rem 1rem #C0C0C0;
+
 }
 
 
@@ -2222,4 +2350,97 @@ grid-template-areas:
   grid-area: img-15;
 }
 
+}
+
+@media screen and (min-width: 1220px) {
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". logo nav ."
+    ".    . menu .";
+  }
+
+  .logo {
+    align-self: center;
+    grid-area: logo;
+    padding: 1rem 0 .5rem 0;
+  }
+
+  .logo img {
+    margin: 0 auto;
+    max-width: 50%;
+  }
+
+  .desktop-nav {
+    grid-area: nav;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .desktop-nav li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  .desktop-nav a {
+    color: black;
+    font-style: 'Libre Franklin';
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+
+  .desktop-nav a:hover{
+    color: #018ABE;
+    font-weight: 600;
+  }
+
+
+  .hero {
+    display: grid;
+    grid-area: hero;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-areas:
+    ". hero-text me .";
+    margin: -1rem 0 12rem 0;
+  }
+
+  .hero img {
+    align-self: start;
+    justify-self: center;
+    grid-area: me;
+    max-width: 81%;
+    margin: -5rem 4rem 0 0;
+    padding: 0 0 2rem 0;
+  }
+
+  .hero-text {
+    align-self: center;
+    grid-area: hero-text;
+    justify-self: end;
+    margin-top: 5.5rem;
+    padding: 5rem 0 0 auto;
+    width:90%;
+  }
+
+  .hero-text h1 {
+    font-size: 10vw;
+    line-height: 10vw;
+    text-align: left;
+  }
+
+  .hero-text h2 {
+    font-size: 3.5vw;
+    line-height: 4vw;
+    text-align: left;
+    justify-self: end;
+    max-width: 15ch;
+  }
+
+  .hero-text i {
+    visibility: hidden;
+    margin: 2.5rem 0 0 0;
+  }
 }
