@@ -104,7 +104,7 @@ a {
   color: white;
 }
 
-.container {
+main {
   margin: 0 auto;
   width: 100%;
 }
@@ -127,7 +127,7 @@ header img {
 
 /* ** FOR MOBILE ** HAMBUGER NAV MENU */
 
-.desktop-nav, .desktop-menu {
+.nav-toggle, .desktop-nav, .desktop-menu, .nav-toggle-label {
   display: none;
 }
 
@@ -135,9 +135,8 @@ header img {
   color:black;
   font-size: 1.6rem;
   position: absolute;
-  margin: 4rem 12rem;
-  right: 0;
-  top: 0;
+  right: 10%;
+  top: 3%;
   z-index: 1001;
 }
 
@@ -603,6 +602,8 @@ footer i {
 .img-11, .img-12, .img-13, .img-14, .img-15 {
   align-self: center;
   justify-self: center;
+  box-shadow: .2rem .2rem 1rem #C0C0C0;
+
 }
 
 
@@ -714,29 +715,71 @@ footer i {
     max-width: 50%;
   }
 
+  /* N A V  B A R  S T A R T S  H E R E */
+
+  .nav-toggle-label {
+    position: absolute;
+    top: 3%;
+    right: 15%;
+    z-index: 2005;
+    color: black;
+    font-style: 'Libre Franklin';
+    font-size: 1.4rem;
+    margin-right: 4rem;
+    display: inline-block;
+  }
+
+
   .desktop-nav {
     grid-area: nav;
     align-self: center;
     justify-self: end;
-    visibility: visible;
+    display: inline-block;
+    margin-left: 2rem;
   }
 
-  .desktop-nav li {
-    display: inline-block;
-    margin-right: 1rem;
-  }
 
   .desktop-nav a {
     color: black;
     font-style: 'Libre Franklin';
-    font-size: 1.4vw;
-    margin-left: 1vw;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    margin-right: 1rem;
   }
 
-  .desktop-nav a:hover{
-    color: #018ABE;
+  .desktop-menu {
+    background-color: white;
+    position: absolute;
+    top: 2%;
+    right: 18%;
+    z-index: 2003;
+    display: none;
+    height: 8rem;
+    padding-top: 4rem;
+  }
+
+  .desktop-menu a {
+    display: block;
+    color: black;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0 1rem 0 1rem;
+  }
+
+  .nav-toggle-label:hover {
     font-weight: 600;
   }
+
+  #nav-toggle {
+    display: none;
+  }
+
+  #nav-toggle:checked ~ .desktop-menu {
+    display: inline-block;
+  }
+
+ /* N A V  B A R  E N D S  H E R E */
 
 
 
@@ -753,9 +796,11 @@ footer i {
     align-self: start;
     justify-self: center;
     grid-area: me;
-    max-width: 83%;
-    margin: -2rem 0 0 0;
+    max-width: 81%;
+    margin: 1rem 4rem 0 0;
     padding: 0 0 2rem 0;
+    position:relative;
+    z-index: 2000;
   }
 
   .hero-text {
@@ -1440,6 +1485,8 @@ grid-template-areas:
 .img-6, .img-7, .img-8, .img-9, .img-10,
 .img-11, .img-12, .img-13, .img-14, .img-15 {
   align-self: center;
+  box-shadow: .2rem .2rem 1rem #C0C0C0;
+
 }
 
 
@@ -1542,8 +1589,10 @@ grid-template-areas:
     grid-template-columns: 1fr 5fr 5fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    ". logo nav ."
-    ".    . menu .";
+    ". logo nav .";
+    position: relative;
+    z-index: 2000;
+    background-color: none;
   }
 
   .logo {
@@ -1557,11 +1606,26 @@ grid-template-areas:
     max-width: 50%;
   }
 
+  /* N A V  B A R  S T A R T S  H E R E */
+
+  .nav-toggle-label {
+    position: absolute;
+    top: 42%;
+    right: 15%;
+    z-index: 2005;
+    color: black;
+    font-style: 'Libre Franklin';
+    font-size: 1.4rem;
+    margin-right: 2rem;
+  }
+
+
   .desktop-nav {
     grid-area: nav;
     align-self: center;
     justify-self: end;
     display:inline-block;
+    margin-left: 2rem;
   }
 
   .desktop-nav li {
@@ -1574,41 +1638,41 @@ grid-template-areas:
     font-style: 'Libre Franklin';
     font-size: 1.4rem;
     margin-left: 1rem;
+    padding: 1rem;
   }
-
-  .desktop-nav a:hover{
-    color: #018ABE;
-    font-weight: 600;
-  }
-
 
   .desktop-menu {
     background-color: white;
-    grid-area: menu;
-    justify-self: end;
-    padding: .8rem;
-    margin: -2rem 5rem 0 0;
-    position:relative;
-    z-index: 2000;
+    position: absolute;
+    top: 30%;
+    right: 15.25%;
+    z-index: 2003;
     display: none;
+    height: 10rem;
+    padding-top: 4rem;
   }
 
   .desktop-menu li {
-    display: inline-block;
+    display: block;
     color: black;
     font-size: 1.4rem;
     line-height: 2rem;
     margin: 0 1rem 0 1rem;
   }
 
-  .desktop-nav:hover ~ .desktop-menu {
-    display:block;
+  .nav-toggle-label:hover {
+    font-weight: 600;
   }
 
+  #nav-toggle {
+    display: none;
+  }
 
+  #nav-toggle:checked ~ .desktop-menu {
+    display: inline-block;
+  }
 
-
-
+ /* N A V  B A R  E N D S  H E R E */
 
 
 
@@ -1626,8 +1690,10 @@ grid-template-areas:
     justify-self: center;
     grid-area: me;
     max-width: 81%;
-    margin: -3rem 4rem 0 0;
+    margin: 1rem 4rem 0 0;
     padding: 0 0 2rem 0;
+    position:relative;
+    z-index: 2000;
   }
 
   .hero-text {
@@ -2374,10 +2440,26 @@ grid-template-areas:
     max-width: 50%;
   }
 
+  /* N A V  B A R  S T A R T S  H E R E */
+
+  .nav-toggle-label {
+    position: absolute;
+    top: 42%;
+    right: 15%;
+    z-index: 2005;
+    color: black;
+    font-style: 'Libre Franklin';
+    font-size: 1.4rem;
+    margin-right: 2rem;
+  }
+
+
   .desktop-nav {
     grid-area: nav;
     align-self: center;
     justify-self: end;
+    display:inline-block;
+    margin-left: 2rem;
   }
 
   .desktop-nav li {
@@ -2390,12 +2472,41 @@ grid-template-areas:
     font-style: 'Libre Franklin';
     font-size: 1.4rem;
     margin-left: 1rem;
+    padding: 1rem;
   }
 
-  .desktop-nav a:hover{
-    color: #018ABE;
+  .desktop-menu {
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    right: 15.25%;
+    z-index: 2003;
+    display: none;
+    height: 10rem;
+    padding-top: 4rem;
+  }
+
+  .desktop-menu li {
+    display: block;
+    color: black;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0 1rem 0 1rem;
+  }
+
+  .nav-toggle-label:hover {
     font-weight: 600;
   }
+
+  #nav-toggle {
+    display: none;
+  }
+
+  #nav-toggle:checked ~ .desktop-menu {
+    display: inline-block;
+  }
+
+ /* N A V  B A R  E N D S  H E R E */
 
 
   .hero {
@@ -2412,8 +2523,10 @@ grid-template-areas:
     justify-self: center;
     grid-area: me;
     max-width: 81%;
-    margin: -5rem 4rem 0 0;
+    margin: 1rem 4rem 0 0;
     padding: 0 0 2rem 0;
+    position:relative;
+    z-index: 2000;
   }
 
   .hero-text {

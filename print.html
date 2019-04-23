@@ -12,7 +12,7 @@
 
   <body>
 
-    <div class="container">
+    <main>
 
       <header>
         <div class="logo">
@@ -28,27 +28,25 @@
             <input id="work-checkbox" type="checkbox" />
             <label for="work-checkbox" class="work-dropdown-on"><li>Work</li></label>
             <ul class="work-dropdown">
-              <li><a href="project.html"> Digital</a></li>
+              <li><a href="project.html">Digital</a></li>
               <li><a href="print.html"> Print</a></li>
             </ul>
               <li><a href="about.html">About</a></li>
-              <li><a href="#">Contact</a></li>
             </ul>
             </div>
 
             <!-- desktop navigation -->
 
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">Work</label>
+
             <nav class="desktop-nav">
-              <div class="work-hov"><li>Work</li></div>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <a href="about.html">About</a>
             </nav>
 
             <div class="desktop-menu">
-              <ul>
-                <li>Digital</li>
-                <li>Print</li>
-                </ul>
+                <a href="project.html">Digital</a>
+                <a href="print.html">Print</a>
               </div>
 
 
@@ -127,6 +125,8 @@
     <a href="https://www.instagram.com/bmferrill/" target="_blank"><i class="fab fa-instagram"></i></a>
     <a href="https://twitter.com/bmferrill" target="_blank"><i class="fab fa-twitter-square"></i></a>
   </footer>
+
+  </main>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45693419-2"></script>
