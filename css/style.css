@@ -135,99 +135,38 @@ section {
 /* header section*/
 
 header {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "logo nav";
   background-color: #FBF2EB;
   padding: 1rem 1.5rem;
 }
 
-header img {
-  max-width: 45%;
+.logo {
+  grid-area: logo;
 }
 
-/* ** FOR MOBILE ** HAMBUGER NAV MENU */
-
-.nav-toggle, .desktop-nav, .desktop-menu, .nav-toggle-label {
-  display: none;
+.logo img {
+  max-width: 60%;
 }
 
-.menu-on {
-  color:black;
-  font-size: 1.6rem;
-  position: absolute;
-  right: 10%;
-  top: 3%;
-  z-index: 1001;
+.nav {
+  align-self: center;
+  justify-self: end;
+  grid-area: nav;
+  display: flex;
+  padding: .6rem 0 0 0;
+
 }
 
-.menu-off {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 999;
-  display: none;
-}
-
-.menu {
-  background-color: white;
-  display: none;
-  padding: 2rem;
-  position: absolute;
-  right: 9%;
-  top: 2.5%;
-  z-index: 1000;
-  width: 9rem;
-}
-
-.menu a {
+.nav a {
+  list-style: none;
+  justify-content: space-around;
+  margin: 0 .6rem;
   color: black;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 3rem;
-}
-
-#toggle-menu {
-  display: none;
-}
-
-/* toggle-menu is the id for the label for the input checkbox.
-   nav.menu is a sibbling of #toggle-menu. (on the same level)
-   this line says that when the checkbox is checked to display the nav.menu*/
-#toggle-menu:checked ~ .menu {
-  display: block;
-}
-
-#toggle-menu:checked ~ .menu-off {
-  display:block;
-}
-
-/* Hidden work dropdown menu */
-
-.work-dropdown {
-  display: none;
-  margin: 0 0 .6rem 0;
-}
-
-.work-dropdown a{
-  font-weight: 300;
-  line-height: 2.2rem;
-}
-
-.work-dropdown-on {
-  color: black;
-  font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 3rem;
-}
-
-/* Hidden checkbox that activates work dropdown */
-#work-checkbox {
-  display: none;
-}
-
-/*if work checkbox is checked, activates work dropdown */
-#work-checkbox:checked ~ .work-dropdown {
-  display: block;
+  font-size: 1.1rem;
 }
 
 
@@ -565,6 +504,7 @@ footer i {
 .bio p{
   margin: 1rem 0 1rem 0;
   letter-spacing: -.01rem;
+  line-height: 2.4rem;
 }
 
 
@@ -591,6 +531,7 @@ footer i {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
+  ". port-hed ."
   ". img-1 ."
   ". img-2 ."
   ". img-3 ."
@@ -612,6 +553,18 @@ footer i {
 .print-port img {
   margin: 0, auto;
   max-width: 80vw;
+}
+
+.port-header {
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  grid-area: port-hed;
+}
+
+.port-header h4 {
+  margin: 2% 0 5% 0;
+  line-height: 2.6rem;
 }
 
 .img-1, .img-2, .img-3, .img-4, .img-5,
@@ -710,6 +663,34 @@ footer i {
     left: 22%;
   }
 
+  .button-bin {
+    background-color: #F9688D;
+    border: none;
+    border-radius: 3rem;
+    font-family: 'Libre Franklin';
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2% auto;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    width: 15rem;
+    position: relative;
+  }
+
+  .button-print {
+    background-color: #F9688D;
+    border: none;
+    border-radius: 3rem;
+    font-family: 'Libre Franklin';
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2% auto;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    width: 15rem;
+    position: relative;
+  }
+
   .button {
     background-color: #F9688D;
     border: none;
@@ -744,11 +725,10 @@ footer i {
 
   header {
     display: grid;
-    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-columns: 10% auto auto 10%;
     grid-template-rows: auto;
     grid-template-areas:
-    ". logo nav ."
-    ".    . menu .";
+    ". logo nav .";
   }
 
   .logo {
@@ -762,73 +742,22 @@ footer i {
     max-width: 50%;
   }
 
-  /* N A V  B A R  S T A R T S  H E R E */
-
-  .nav-toggle-label {
-    position: absolute;
-    top: 3%;
-    right: 15%;
-    z-index: 2005;
-    color: black;
-    font-style: 'Libre Franklin';
-    font-size: 1.4rem;
-    margin-right: 4rem;
-    display: inline-block;
-  }
-
-
-  .desktop-nav {
-    grid-area: nav;
+  .nav {
     align-self: center;
     justify-self: end;
-    display: inline-block;
-    margin-left: 2rem;
+    grid-area: nav;
+    display: flex;
+    padding: 1.1rem 0 0 0;
+
   }
 
-
-  .desktop-nav a {
+  .nav a {
+    list-style: none;
+    justify-content: space-around;
+    margin: 0 1rem;
     color: black;
-    font-style: 'Libre Franklin';
-    font-size: 1.4rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    margin-right: 1rem;
+    font-size: 1.2vw;
   }
-
-  .desktop-menu {
-    background-color: white;
-    position: absolute;
-    top: 2%;
-    right: 18%;
-    z-index: 2003;
-    display: none;
-    height: 8rem;
-    padding-top: 4rem;
-  }
-
-  .desktop-menu a {
-    display: block;
-    color: black;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    margin: 0 1rem 0 1rem;
-  }
-
-  .nav-toggle-label:hover {
-    font-weight: 600;
-  }
-
-  #nav-toggle {
-    display: none;
-  }
-
-  #nav-toggle:checked ~ .desktop-menu {
-    display: inline-block;
-  }
-
- /* N A V  B A R  E N D S  H E R E */
-
-
 
   .hero {
     display: grid;
@@ -1511,6 +1440,7 @@ grid-template-areas:
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
+  ". port-hed port-hed ."
   ". img-1 img-2 ."
   ". img-3 img-3 ."
   ". img-4 img-6 ."
@@ -1522,6 +1452,17 @@ grid-template-areas:
   ". img-13 img-14 ."
   ". img-15 img-15 .";
   margin: 3rem 0;
+}
+
+.port-header {
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  grid-area: port-hed;
+}
+
+.port-header h4 {
+  line-height: 4rem;
 }
 
 .print-port img {
@@ -1663,7 +1604,7 @@ grid-template-areas:
 
   header {
     display: grid;
-    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-columns: 10% auto auto 10%;
     grid-template-rows: auto;
     grid-template-areas:
     ". logo nav .";
@@ -1683,75 +1624,24 @@ grid-template-areas:
     max-width: 50%;
   }
 
-  /* N A V  B A R  S T A R T S  H E R E */
-
-  .nav-toggle-label {
-    position: absolute;
-    top: 42%;
-    right: 15%;
-    z-index: 2005;
-    color: black;
-    font-style: 'Libre Franklin';
-    font-size: 1.4rem;
-    margin-right: 2rem;
-  }
-
-
-  .desktop-nav {
-    grid-area: nav;
+  .nav {
     align-self: center;
     justify-self: end;
-    display:inline-block;
-    margin-left: 2rem;
+    grid-area: nav;
+    padding: 1.1rem 0 0 0;
+
   }
 
-  .desktop-nav li {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-
-  .desktop-nav a {
+  .nav a {
+    list-style: none;
+    margin: 0 2rem;
     color: black;
-    font-style: 'Libre Franklin';
-    font-size: 1.4rem;
-    margin-left: 1rem;
-    padding: 1rem;
+    font-size: 1.2vw;
   }
 
-  .desktop-menu {
-    background-color: white;
-    position: absolute;
-    top: 30%;
-    right: 15.25%;
-    z-index: 2003;
-    display: none;
-    height: 10rem;
-    padding-top: 4rem;
+  .nav a:hover {
+    color: #018ABE;
   }
-
-  .desktop-menu li {
-    display: block;
-    color: black;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    margin: 0 1rem 0 1rem;
-  }
-
-  .nav-toggle-label:hover {
-    font-weight: 600;
-  }
-
-  #nav-toggle {
-    display: none;
-  }
-
-  #nav-toggle:checked ~ .desktop-menu {
-    display: inline-block;
-  }
-
- /* N A V  B A R  E N D S  H E R E */
-
-
 
   .hero {
     display: grid;
@@ -2412,12 +2302,24 @@ grid-template-areas:
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
+  ". port-hed port-hed port-hed port-hed ."
   ". img-1 img-2 img-3 img-3 ."
   ". img-4 img-5 img-5 img-6 ."
   ". img-7 img-7 img-8 img-9 ."
   ". img-10 img-11 img-11 img-12 ."
   ". img-13 img-14 img-15 img-15 .";
   margin: 6rem 0;
+}
+
+.port-header {
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  grid-area: port-hed;
+}
+
+.port-header h4 {
+  line-height: 4rem;
 }
 
 .print-port img {
@@ -2499,11 +2401,10 @@ grid-template-areas:
 
   header {
     display: grid;
-    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-columns: 10% auto auto 10%;
     grid-template-rows: auto;
     grid-template-areas:
-    ". logo nav ."
-    ".    . menu .";
+    ". logo nav .";
   }
 
   .logo {
@@ -2517,74 +2418,30 @@ grid-template-areas:
     max-width: 50%;
   }
 
-  /* N A V  B A R  S T A R T S  H E R E */
-
-  .nav-toggle-label {
-    position: absolute;
-    top: 42%;
-    right: 15%;
-    z-index: 2005;
-    color: black;
-    font-style: 'Libre Franklin';
-    font-size: 1.4rem;
-    margin-right: 2rem;
-  }
-
-
-  .desktop-nav {
-    grid-area: nav;
+  .nav {
     align-self: center;
     justify-self: end;
-    display:inline-block;
-    margin-left: 2rem;
+    grid-area: nav;
+    display: flex;
+    padding: 1.1rem 0 0 0;
+
   }
 
-  .desktop-nav li {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-
-  .desktop-nav a {
+  .nav a {
+    list-style: none;
+    justify-content: space-around;
+    margin: 0 1.6rem;
     color: black;
-    font-style: 'Libre Franklin';
-    font-size: 1.4rem;
-    margin-left: 1rem;
-    padding: 1rem;
+    font-size: 1.2vw;
   }
 
-  .desktop-menu {
-    background-color: white;
-    position: absolute;
-    top: 30%;
-    right: 15.25%;
-    z-index: 2003;
-    display: none;
-    height: 10rem;
-    padding-top: 4rem;
+  .nav a:hover {
+    color: #018ABE;
   }
 
-  .desktop-menu li {
-    display: block;
-    color: black;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    margin: 0 1rem 0 1rem;
+  .blue a {
+    color: #018ABE;
   }
-
-  .nav-toggle-label:hover {
-    font-weight: 600;
-  }
-
-  #nav-toggle {
-    display: none;
-  }
-
-  #nav-toggle:checked ~ .desktop-menu {
-    display: inline-block;
-  }
-
- /* N A V  B A R  E N D S  H E R E */
-
 
   .hero {
     display: grid;
