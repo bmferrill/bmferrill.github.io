@@ -2456,8 +2456,8 @@ grid-template-areas:
     align-self: start;
     justify-self: center;
     grid-area: me;
-    max-width: 81%;
-    margin: 1rem 4rem 0 0;
+    max-width: 80%;
+    margin: -8% 4rem 0 0;
     padding: 0 0 2rem 0;
     position:relative;
     z-index: 2000;
