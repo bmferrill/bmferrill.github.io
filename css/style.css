@@ -2405,6 +2405,7 @@ grid-template-areas:
     grid-template-rows: auto;
     grid-template-areas:
     ". logo nav .";
+
   }
 
   .logo {
@@ -2423,7 +2424,8 @@ grid-template-areas:
     justify-self: end;
     grid-area: nav;
     display: flex;
-    padding: 1.1rem 0 0 0;
+    margin: -3% 0 0 0;
+
 
   }
 
@@ -2460,7 +2462,6 @@ grid-template-areas:
     margin: -8% 4rem 0 0;
     padding: 0 0 2rem 0;
     position:relative;
-    z-index: 2000;
   }
 
   .hero-text {
